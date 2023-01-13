@@ -115,3 +115,34 @@ article.blog {
     color: #FF4A60;
     padding: 5px 10px;
 }
+
+/*---------------
+     Responsive 
+-----------------  */
+
+/* mobile devices */
+@media only screen and (max-width: 688px){
+    .container{
+        width: 100%;
+    }
+    .players, .blogs, .courses{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .player, .blog, .courses{
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+/* tablet devices  */
+@media only screen and (min-width: 688px) and (max-width: 992px) {
+    .container{
+        width: 100%;
+    }
+    .blogs{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .players, .courses{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
